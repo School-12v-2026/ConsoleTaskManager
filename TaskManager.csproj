@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{207AA5A6-F156-4385-B10D-3EA0B85C8FA7}</ProjectGuid>
+    <ProjectGuid>{BEC2418C-8393-4F0F-BE56-8C1CBF89455C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>TaskManager</RootNamespace>
     <AssemblyName>TaskManager</AssemblyName>
@@ -43,18 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\Documents\проект Класна\ConsoleTaskManager\TaskManager.cs">
-      <Link>Core\TaskManager.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\Documents\проект Класна\ConsoleTaskManager\TaskItem.cs">
-      <Link>Models\TaskItem.cs</Link>
-    </Compile>
+    <Compile Include="Core\TaskItem.cs" />
+    <Compile Include="Models\TaskManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
